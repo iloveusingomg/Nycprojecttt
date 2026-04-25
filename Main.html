@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthsary Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@400;500;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section class="page active hero-slide" id="slide-1" data-page="1">
+      <div class="hero-overlay">
+        <h1>You got a mail!</h1>
+        <button class="envelope-trigger" id="open-envelope-1" aria-label="Open envelope">
+          <span class="envelope image-envelope"></span>
+          <span class="tap-text">Click the wax to open</span>
+        </button>
+      </div>
+    </section>
+    <section class="page story-page" id="slide-2" data-page="2">
+      <div class="story-scroll">
+        <section class="slide scrapbook-slide" id="slide-2a">
+          <div class="city-love-scene">
+            <p class="floating-word word-rak">รัก</p>
+            <p class="floating-word word-sarang">사랑</p>
+            <p class="floating-word word-liebe">Liebe</p>
+            <p class="floating-word word-ai">爱</p>
+            <p class="floating-word word-russian">Любовь</p>
+            <p class="floating-word word-pyaar">प्यार</p>
+            <p class="floating-word word-love">Love</p>
+            <p class="floating-word word-amour">Amour</p>
+            <p class="main-title maybe-in">Maybe in</p>
+            <p class="main-title another-life">ANOTHER LIFE</p>
+            <p class="lang-note">The language<br>that I can<br>never<br>understand.</p>
+          </div>
+        </section>
+        <section class="slide scrapbook-slide" id="slide-3">
+          <h2>Little Things, Big Love</h2>
+          <div class="scrapbook-grid"><article class="scrap four"><span>Coffee Dates</span></article><article class="scrap five"><span>Your Laugh</span></article><article class="scrap six"><span>Warm Hugs</span></article></div>
+        </section>
+        <section class="slide scrapbook-slide" id="slide-4">
+          <h2>Favorite Moments</h2>
+          <div class="scrapbook-grid"><article class="scrap seven"><span>Movie Nights</span></article><article class="scrap eight"><span>Long Walks</span></article><article class="scrap nine"><span>Happy Tears</span></article></div>
+        </section>
+        <section class="slide scrapbook-slide" id="slide-5">
+          <h2>All the Soft Memories</h2>
+          <div class="scrapbook-grid"><article class="scrap ten"><span>Hand in Hand</span></article><article class="scrap eleven"><span>Sunset Views</span></article><article class="scrap twelve"><span>Sweet Notes</span></article></div>
+        </section>
+        <section class="slide scrapbook-slide disc-slide" id="slide-6">
+          <h2>One More Surprise</h2>
+          <div class="scrapbook-grid"><article class="scrap thirteen"><span>Forever Mood</span></article><article class="scrap fourteen"><span>Your Kind Eyes</span></article><article class="scrap fifteen"><span>My Safe Place</span></article></div>
+          <button id="open-disc" class="disc-trigger" aria-label="Open music disc">
+            <span class="disc"></span>
+            <span class="album-cover"></span>
+          </button>
+        </section>
+      </div>
+    </section>
+    <section class="page reveal-slide" id="slide-7" data-page="7">
+      <div class="letter-box">
+        <h2>You unlocked the final chapter</h2>
+        <p>I made this small place for all our moments. There is still one more page for you.</p>
+        <button class="next-btn strong" data-next="8">Click Here</button>
+      </div>
+    </section>
+    <section class="page final-slide" id="slide-8" data-page="8">
+      <div class="final-card">
+        <h2>Happy Monthsary, My Love</h2>
+        <p>Thank you for being my peace, my joy, and my favorite person every day.</p>
+        <p class="signature">With all my heart ❤</p>
+        <button class="restart-btn">Replay Story</button>
+      </div>
+    </section>
+  </main>
+  <div id="transition-overlay"><div class="overlay-envelope"><span class="overlay-top"></span><span class="overlay-body"></span></div></div>
+  <div id="disc-transition">
+    <div class="disc-grow"></div>
+    <div class="cover-sweep"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
